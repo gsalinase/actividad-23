@@ -25,7 +25,21 @@ Su amiga le pide algunos ajustes. Los cambios avanzados los va a realizar solame
 
 Tú como eres un@ desarrollador@ responsable vas a realizar los cambios en un **Child Theme**.
 
-> ¿Esta plantilla se puede trabajar con child theme? ¿Hay algún error? Revise la consola en el inspector de elementos para confirmar. ¿Cómo lo puedo solucionar?
+> ¿Esta plantilla se puede trabajar con child theme? 
+
+*R//* Sí.
+
+>¿Hay algún error? 
+
+*R//* Hay un error con una imagen en el tema padre.
+
+>Revise la consola en el inspector de elementos para confirmar. ¿Cómo lo puedo solucionar?
+
+*R//* Se puede solucionar de dos maneras:
+
+ 1.- La primera es agregar el archivo que falta dentro de la carpeta images del tema padre.
+
+ 2.- La segunda es crear la carpeta en el tema hijo y usar poner la ruta de la imagen que falta en este template.
 
 Algunas de las alternativas que tenemos son: 
 
