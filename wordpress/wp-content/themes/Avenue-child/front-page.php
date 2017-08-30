@@ -1,31 +1,27 @@
-<?php get_header(); ?>
+<?php
 
-<div id="content" >
+/**
+ * Template Name: Home Page
+ */
 
-<?php if (have_posts()) : ?>
-<?php while (have_posts()) : the_post(); ?>
+get_header(); 
 
-<div class="post" id="post-<?php the_ID(); ?>">
-<div class="title">
-<h2><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>"><?php the_title(); ?></a></h2>
-</div>
+?>
 
+<div id="primary">
+	<div id="content" role="main">
 
-<div class="entry">
-<?php the_content('Read the rest of this entry &raquo;'); ?>
-<div class="clear"></div>
-</div>
+		<?php while ( have_posts() ) : the_post(); ?>
 
-</div>
+			<h1><?php the_field('custom_title'); ?></h1>
 
-<?php endwhile; else: ?>
+			<img src="<?php the_field('hero_image'); ?>" />
 
-		<h1 class="title">Not Found</h1>
-		<p>I'm Sorry,  you are looking for something that is not here. Try a different search.</p>
+			<p><?php the_content(); ?></p>
 
-<?php endif; ?>
+		<?php endwhile; // end of the loop. ?>
 
-</div>
+	</div><!-- #content -->
+</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>
