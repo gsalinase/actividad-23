@@ -1,5 +1,5 @@
 <div class="squarebanner ">
-	<h3 class="sidetitl "> Sponsors </h3>
+	<h3 class="sidetitl "> Auspiciadores </h3>
 <ul><li>
 <?php 
 	$ban1 = get_option('aven_banner1'); 
